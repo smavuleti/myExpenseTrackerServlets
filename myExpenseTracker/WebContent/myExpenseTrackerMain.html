@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>My Expense Tracker</title>
+</head>
+<body>
+<h2> Enter your expenses</h2>
+<form name="expenseTrackerForm" action="servlet/expense" method="POST">
+Categories : 
+	<select name="category">
+            <option value="Movies">Movies</option>
+            <option value="Errands">Errands</option>
+            <option value="Gas">Gas</option>
+            <option value="Shopping">Shopping</option>
+    </select> 
+ <br>
+Date :
+<input type="date" value=" " name ="date">
+<br>
+Price :
+<input type="number" value="0" name ="price">
+<br>
+<textarea name="comments" >Enter your comments...</textarea>
+<br>
+<input type="submit" value="enter" name="Enter">
+</form>
+</body>
+</html>
